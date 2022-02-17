@@ -143,6 +143,22 @@ html {
     cursor: pointer;
 }
 
+.progress-form {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.durationTime,
+.currentTime {
+    margin: 0 10px;
+    color: var(--text-color);
+    font-size: 15px;
+    display: block;
+    width: 60px;
+    text-align: center;
+}
+
 /* PLAYLIST */
 
 .playlist {

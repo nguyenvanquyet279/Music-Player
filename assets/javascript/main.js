@@ -5,7 +5,7 @@
 
 		const heading = $('.header h2')
 		const cdThumb = $('.cd-thumb')
-		const audio = $('#audio'); audio.volume = 0.1
+		const audio = $('#audio')
 		const cd = $('.cd')
 		const playBtn = $('.btn-toggle-play')
 		const progress = $('#progress')
@@ -228,6 +228,21 @@
 					}
 				}
 			
+				//Xu ly cap nhat realTime
+				audio.addEventListener('timeupdate', function() {
+					var curtime = this.currentTime
+					var min = Math.floor(curtime / 60)
+					var sec = Math.floor(curtime % 60)
+					document.querySelector('.currentTime').innerText = (min < 10 ? '0' + min : min) + ':' + (sec < 10 ? '0' + sec : sec)
+				})
+			  
+				//Song duration time
+				audio.onloadedmetadata = function() {
+					duration = this.duration
+					var min = Math.floor(duration / 60)
+					var sec = Math.floor(duration % 60)
+					document.querySelector('.durationTime').innerText = (min < 10 ? '0' + min : min) + ':' + (sec < 10 ? '0' + sec : sec)
+				}
 			},
 			loadConfig: function() {
 				this.isRandom = this.config.isRandom
