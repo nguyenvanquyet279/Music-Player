@@ -196,6 +196,7 @@ html {
 .song .title {
     font-size: 20px;
     color: var(--text-color);
+    line-height: 26px;
 }
 
 .song .author {

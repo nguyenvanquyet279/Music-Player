@@ -57,6 +57,12 @@
 					image: 'assets/img/yeuTuDauMaRa.jpg'
 				},
 				{
+					name: 'Thương em là điều anh không thể ngờ',
+					singer: 'Noo Phước Thịnh',
+					path: 'assets/music/ThuongEm.mp3',
+					image: 'https://avatar-ex-swe.nixcdn.com/song/2018/12/18/2/c/1/f/1545098338244_500.jpg'
+				},
+				{
 					name: 'Xe đạp',
 					singer: 'Charles HuynhCM1X',
 					path: 'assets/music/XeDapLofiCover-CharlesHuynhCM1X-6273316.mp3',
